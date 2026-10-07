@@ -1,0 +1,142 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+struct Song
+{
+    string name;
+    string artist;
+};
+
+int main()
+{
+    Song playlist[50];
+    int count = 0;
+    int choice;
+    string searchName;
+
+    do
+    {
+        cout << "\n===== MUSIC PLAYLIST MANAGER =====\n";
+        cout << "1. Add Song\n";
+        cout << "2. Display Playlist\n";
+        cout << "3. Search Song\n";
+        cout << "4. Delete Song\n";
+        cout << "5. Exit\n";
+        cout << "Enter your choice: ";
+        cin >> choice;
+
+        switch(choice)
+        {
+            case 1:
+                if(count < 50)
+                {
+                    cout << "Enter song name: ";
+                    cin >> ws;
+                    getline(cin, playlist[count].name);
+
+                    cout << "Enter artist name: ";
+                    getline(cin, playlist[count].artist);
+
+                    count++;
+
+                    cout << "Song added successfully!\n";
+                }
+                else
+                {
+                    cout << "Playlist is full!\n";
+                }
+                break;
+
+            case 2:
+                if(count == 0)
+                {
+                    cout << "Playlist is empty.\n";
+                }
+                else
+                {
+                    cout << "\n----- YOUR PLAYLIST -----\n";
+
+                    for(int i = 0; i < count; i++)
+                    {
+                        cout << i + 1 << ". "
+                             << playlist[i].name
+                             << " - "
+                             << playlist[i].artist
+                             << endl;
+                    }
+                }
+                break;
+
+            case 3:
+            {
+                bool found = false;
+
+                cout << "Enter song name to search: ";
+                cin >> ws;
+                getline(cin, searchName);
+
+                for(int i = 0; i < count; i++)
+                {
+                    if(playlist[i].name == searchName)
+                    {
+                        cout << "Song Found!\n";
+                        cout << "Song: " << playlist[i].name << endl;
+                        cout << "Artist: " << playlist[i].artist << endl;
+
+                        found = true;
+                        break;
+                    }
+                }
+
+                if(!found)
+                {
+                    cout << "Song not found.\n";
+                }
+                break;
+            }
+
+            case 4:
+            {
+                bool found = false;
+
+                cout << "Enter song name to delete: ";
+                cin >> ws;
+                getline(cin, searchName);
+
+                for(int i = 0; i < count; i++)
+                {
+                    if(playlist[i].name == searchName)
+                    {
+                        for(int j = i; j < count - 1; j++)
+                        {
+                            playlist[j] = playlist[j + 1];
+                        }
+
+                        count--;
+                        found = true;
+
+                        cout << "Song deleted successfully!\n";
+                        break;
+                    }
+                }
+
+                if(!found)
+                {
+                    cout << "Song not found.\n";
+                }
+                break;
+            }
+
+            case 5:
+                cout << "Thank you for using Music Playlist Manager!\n";
+                break;
+
+            default:
+                cout << "Invalid choice!\n";
+        }
+
+    } while(choice != 5);
+
+    return 0;
+}
