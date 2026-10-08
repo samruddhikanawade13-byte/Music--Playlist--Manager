@@ -1,0 +1,12 @@
+Objectives
+The main objectives of the Music Playlist Manager are:
+To create a simple and user-friendly playlist management system.
+To add new songs to the playlist.
+To display all songs stored in the playlist.
+To search for a particular song.
+To delete a song from the playlist.
+To store song information such as song name and artist name.
+To understand the implementation of data structures in C++.
+To improve programming and problem-solving skills.
+To demonstrate menu-driven programming.
+To provide an easy method for managing a collection of songs.
