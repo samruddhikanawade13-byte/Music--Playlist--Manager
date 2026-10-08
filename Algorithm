@@ -1,0 +1,21 @@
+Step 1: Start the program.
+Step 2: Define a structure Song containing:
+Song name
+Artist name
+Step 3: Create an array to store multiple songs.
+Step 4: Display the main menu:
+Add Song
+Display Playlist
+Search Song
+Delete Song
+Exit
+Step 5: Accept the user's choice.
+Step 6: If the user selects Add Song, enter the song name and artist name and store them in the playlist.
+Step 7: If the user selects Display Playlist, display all songs with their artist names.
+Step 8: If the user selects Search Song, accept the song name and compare it with the songs stored in the playlist.
+Step 9: If the song is found, display its details. Otherwise, display "Song not found."
+Step 10: If the user selects Delete Song, search for the song and remove it from the playlist.
+Step 11: Display the updated playlist.
+Step 12: Repeat the menu until the user selects Exit.
+Step 13: Stop the program.
+5. Flowchart
