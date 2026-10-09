@@ -1,0 +1,36 @@
+
+===== MUSIC PLAYLIST MANAGER =====
+1. Add Song
+2. Display Playlist
+3. Search Song
+4. Delete Song
+5. Exit
+Enter your choice: 2
+
+----- YOUR PLAYLIST -----
+1. Perfect - Ed Sheeran
+2. Believer - Imagine Dragons
+
+
+Enter your choice: 3
+Enter song name to search: Perfect
+
+Song Found!
+Song: Perfect
+Artist: Ed Sheeran
+
+
+Enter your choice: 4
+Enter song name to delete: Believer
+
+Song deleted successfully!
+
+
+Enter your choice: 2
+
+----- YOUR PLAYLIST -----
+1. Perfect - Ed Sheeran
+
+
+Enter your choice: 5
+Thank you for using Music Playlist Manager!
