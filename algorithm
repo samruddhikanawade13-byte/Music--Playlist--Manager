@@ -1,0 +1,15 @@
+Algorithm: Music Playlist Manager
+1. Start the program.
+2. Initialize the doubly linked list, circular linked list, stack, and queue.
+3. Display the menu of operations.
+4. Accept the user's choice.
+5. If the user selects Add Song, insert the song into the playlist.
+6. If the user selects Display Playlist, display all songs.
+7. If the user selects Next Song, move to the next song.
+8. If the user selects Previous Song, move to the previous song.
+9. If the user selects Play in Loop, use the circular linked list to repeat songs.
+10. If the user selects Recently Played, display songs stored in the stack.
+11. If the user selects Add to Queue, insert the song into the queue.
+12. If the user selects Play from Queue, remove and play the first queued song.
+13. Repeat steps 3–12 until the user selects Exit.
+14. Stop the program.
