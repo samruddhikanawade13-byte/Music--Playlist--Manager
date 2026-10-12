@@ -1,0 +1,17 @@
+
+flowchart TD
+    A([Start]) --> B[Initialize Data Structures]
+    B --> C[Display Menu]
+    C --> D[/Enter Choice/]
+    D --> E{Select Operation}
+    E -->|Add Song| F[Add Song]
+    E -->|Display| G[Display Playlist]
+    E -->|Play Next| H[Play Next Song]
+    E -->|Play Queue| I[Play Queued Song]
+    E -->|Recently Played| J[Display Stack]
+    E -->|Exit| K([Stop])
+    F --> C
+    G --> C
+    H --> C
+    I --> C
+    J --> C
