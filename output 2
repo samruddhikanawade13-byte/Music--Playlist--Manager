@@ -1,0 +1,55 @@
+
+===== MUSIC PLAYLIST MANAGER =====
+1. Add Song
+2. Display Songs
+3. Delete Song
+4. Create Circular Playlist
+5. Play Next Song
+6. Show Recently Played Songs
+7. Add Song to Queue
+8. Play Song from Queue
+9. Exit
+
+Enter your choice: 1
+Enter song name: Believer
+Song added: Believer
+
+Enter your choice: 1
+Enter song name: Perfect
+Song added: Perfect
+
+Enter your choice: 1
+Enter song name: Shape of You
+Song added: Shape of You
+
+Enter your choice: 2
+
+Music Playlist:
+Believer
+Perfect
+Shape of You
+
+Enter your choice: 4
+Circular playlist created.
+
+Enter your choice: 5
+Now Playing: Believer
+
+Enter your choice: 5
+Now Playing: Perfect
+
+Enter your choice: 6
+
+Recently Played Songs (Stack):
+Perfect
+Believer
+
+Enter your choice: 7
+Enter song name: Memories
+Song added to queue: Memories
+
+Enter your choice: 8
+Playing queued song: Memories
+
+Enter your choice: 9
+Exiting Music Playlist Manager.
