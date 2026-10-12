@@ -1,0 +1,9 @@
+
+
+1. Objectives of Music Playlist Manager
+1. To develop a music playlist management system using C programming.
+2. To use a Doubly Linked List to add, display, and delete songs.
+3. To use a Circular Linked List to play songs continuously.
+4. To use a Stack to store recently played songs.
+5. To use a Queue to manage songs waiting to be played.
+6. To understand the practical applications of data structures.
